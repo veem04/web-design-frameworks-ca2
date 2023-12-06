@@ -1,1 +1,19 @@
-@import '../node_modules/bootstrap/scss/bootstrap.scss'
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600&family=Barlow+Semi+Condensed:wght@400;600&display=swap');
+@import '../node_modules/bootstrap/scss/functions';
+
+$custom-colours: (
+    'navy': rgb(78, 91, 98),
+);
+
+@import '../node_modules/bootstrap/scss/variables';
+// @import '../node_modules/bootstrap/scss/mixins';
+
+.navbar{
+    font-family: 'Barlow Semi Condensed', Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+
+$nav-link-font-size: 1.5em;
+$theme-colors: map-merge($theme-colors, $custom-colours);
+
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
