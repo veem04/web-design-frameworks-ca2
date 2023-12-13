@@ -3,10 +3,14 @@
 
 $custom-colours: (
     'navy': rgb(78, 91, 98),
+    'light-blue': rgb(156, 201, 203),
+    'brown': rgb(124, 84, 87),
+    'orange': rgb(214, 145, 104),
 );
 
-
 $success: rgb(99, 137, 79);
+
+$btn-color: #3B3E3B;
 
 $nav-link-font-size: 1.5em;
 
@@ -17,9 +21,11 @@ $nav-link-font-size: 1.5em;
 
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/mixins";
+// @import "../node_modules/bootstrap/scss/buttons";
 
 body{
     font-family: 'Barlow Semi Condensed', Arial, Helvetica, sans-serif !important;
+    color: #525652;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -44,6 +50,10 @@ h1, h2, h3, h4, h5, h6{
     gap: 1em;
 }
 
-$theme-colors: map-merge($theme-colors, $custom-colours);
+.card img{
+    max-height:400px;
+}
 
+
+$theme-colors: map-merge($theme-colors, $custom-colours);
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
