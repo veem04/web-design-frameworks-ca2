@@ -16,8 +16,22 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   gap: 1em;
 }
 
-.card img {
+#cards .card img {
   max-height: 400px;
+}
+
+#rathmines-bg {
+  background-image: url(/images/rathmines-min.jpeg);
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#inchicore-bg {
+  background-image: url(/images/inchicore-min.jpeg);
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 /*!
