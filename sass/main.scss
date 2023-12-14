@@ -66,6 +66,21 @@ h1, h2, h3, h4, h5, h6{
     object-fit: cover;
 }
 
+#ig-link{
+    color:white;
+}
+
+#ig-link:hover{
+    color:rgb(225, 48, 108);
+}
+
+#fb-link{
+    color: white;
+}
+
+#fb-link:hover{
+    color: rgb(23, 169, 253);
+}
 
 $theme-colors: map-merge($theme-colors, $custom-colours);
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
