@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Greenville Deli</title>
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,7 +14,7 @@
 <body>
     <nav class="navbar navbar-expand-lg bg-navy">
         <div class="container">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="index.html">
                 <img src="images/logo.png" alt="Greenville Deli" width="150">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -129,6 +129,8 @@
                         <div class="col-12 border border-success border-2 border-top-0 rounded-bottom-2">
                             <div class="container">
                                 <div class="row mx-2">
+                                    <!-- the minimum amount of columns for a row in the menu should be 2. -->
+                                    <!-- it still goes down to 1. i dont know how to fix this -->
                                     <div class="col-md-6 col-lg-4 py-4">
                                         <div class="card">
                                             <img src="images/placeholder-salad.jpg" class="card-img-top" alt="...">
@@ -138,7 +140,7 @@
                                             </div>
                                             <div class="card-footer d-flex align-items-center justify-content-between">
                                                 <p class="m-0 fs-5">€5</p>
-                                                <a href="#" class="btn btn-success text-light btn-lg">Add to cart</a>
+                                                <a href="product_page.html" class="btn btn-success text-light btn-lg">Add to cart</a>
                                             </div>
                                         </div>
                                     </div>
@@ -151,7 +153,7 @@
                                             </div>
                                             <div class="card-footer d-flex align-items-center justify-content-between">
                                                 <p class="m-0 fs-5">€5</p>
-                                                <a href="#" class="btn btn-success text-light btn-lg">Add to cart</a>
+                                                <a href="product_page.html" class="btn btn-success text-light btn-lg">Add to cart</a>
                                             </div>
                                         </div>
                                     </div>
@@ -164,7 +166,7 @@
                                             </div>
                                             <div class="card-footer d-flex align-items-center justify-content-between">
                                                 <p class="m-0 fs-5">€5</p>
-                                                <a href="#" class="btn btn-success text-light btn-lg">Add to cart</a>
+                                                <a href="product_page.html" class="btn btn-success text-light btn-lg">Add to cart</a>
                                             </div>
                                         </div>
                                     </div>
@@ -177,7 +179,7 @@
                                             </div>
                                             <div class="card-footer d-flex align-items-center justify-content-between">
                                                 <p class="m-0 fs-5">€5</p>
-                                                <a href="#" class="btn btn-success text-light btn-lg">Add to cart</a>
+                                                <a href="product_page.html" class="btn btn-success text-light btn-lg">Add to cart</a>
                                             </div>
                                         </div>
                                     </div>
@@ -190,7 +192,7 @@
                                             </div>
                                             <div class="card-footer d-flex align-items-center justify-content-between">
                                                 <p class="m-0 fs-5">€5</p>
-                                                <a href="#" class="btn btn-success text-light btn-lg">Add to cart</a>
+                                                <a href="product_page.html" class="btn btn-success text-light btn-lg">Add to cart</a>
                                             </div>
                                         </div>
                                     </div>
@@ -203,7 +205,7 @@
                                             </div>
                                             <div class="card-footer d-flex align-items-center justify-content-between">
                                                 <p class="m-0 fs-5">€5</p>
-                                                <a href="#" class="btn btn-success text-light btn-lg">Add to cart</a>
+                                                <a href="product_page.html" class="btn btn-success text-light btn-lg">Add to cart</a>
                                             </div>
                                         </div>
                                     </div>
@@ -222,15 +224,17 @@
             <div class="container-fluid bg-navy py-5">
                 <div class="container">
                     <div class="row">
-                        <div class="col-6 d-flex flex-column align-items-center">
-                            <h2 class="text-light">Legal stuff</h2>
+                        <div class="col-sm-12 col-md-6 d-flex flex-column align-items-center my-3">
+                            <h2 class="text-light">Contact info</h2>
                             <ul class="list-group list-group-flush fs-5">
-                                <li class="list-group-item list-group-item-navy"><a href="#" class="link-light link-opacity-75-hover">Contact us</a></li>
-                                <li class="list-group-item list-group-item-navy"><a href="#" id="ig-link"><i class="bi bi-instagram"></i> Greenville Gram</a></li>
-                                <li class="list-group-item list-group-item-navy"><a href="#" id="fb-link"><i class="bi bi-facebook"></i> Facebook</a></li>
+                                <li class="list-group-item list-group-item-navy"><a href="contact_page.html" class="link-light link-opacity-75-hover">Contact us</a></li>
+                                <li class="list-group-item list-group-item-navy"><a href="https://www.instagram.com/greenvilledeli/" id="ig-link"><i class="bi bi-instagram"></i> Greenville Gram</a></li>
+                                <li class="list-group-item list-group-item-navy"><a href="https://www.facebook.com/greenvilledeli/" id="fb-link"><i class="bi bi-facebook"></i> Facebook</a></li>
+                                <li class="list-group-item list-group-item-navy text-light">Email: <a href="mailto:hi@greenvilledeli.ie" class="link-light link-opacity-75-hover">hi@greenvilledeli.ie</a></li>
+
                             </ul>
                         </div>
-                        <div class="col-6 d-flex flex-column align-items-center">
+                        <div class="col-sm-12 col-md-6 d-flex flex-column align-items-center my-3">
                             <h2 class="text-light">Legal stuff</h2>
                             <ul class="list-group list-group-flush fs-5">
                                 <li class="list-group-item list-group-item-navy"><a href="#" class="link-light link-opacity-75-hover">Terms of service</a></li>
